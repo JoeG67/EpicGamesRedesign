@@ -1,11 +1,22 @@
-import './assets/main.css'
+import './assets/main.css';
 
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
-import App from './App.vue'
+import { createApp } from 'vue';
+import { createPinia } from 'pinia';
+import App from './App.vue';
 
-const app = createApp(App)
+// PrimeVue imports
+import PrimeVue from 'primevue/config';
+import 'primeicons/primeicons.css';  // Add this line if it's not present
 
-app.use(createPinia())
+// PrimeVue component registration (optional if registering locally)
 
-app.mount('#app')
+const app = createApp(App);
+
+// Use Pinia for state management
+app.use(createPinia());
+
+// Use PrimeVue plugin
+app.use(PrimeVue);
+
+// Mount the app
+app.mount('#app');
