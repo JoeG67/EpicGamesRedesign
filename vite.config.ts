@@ -17,4 +17,7 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
+  css: {
+    postcss: './postcss.config.js', // Make sure to point to the config file
+  },
 })
