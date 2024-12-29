@@ -24,7 +24,7 @@
             :icon="'pi pi-users'"
             class="p-button p-component p-button-text p-button-plain mr-5"
           />
-          <Button :icon="'pi pi-heart'" class="text-gray-600 mr-5" />
+          <Button :icon="'pi pi-shopping-cart'" class="text-gray-600 mr-5" />
 
           <Avatar
             image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png"
