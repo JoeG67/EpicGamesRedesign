@@ -1,14 +1,13 @@
-import './assets/main.css';
-
 import { createApp } from 'vue';
 import { createPinia } from 'pinia';
 import App from './App.vue';
 
 // PrimeVue imports
 import PrimeVue from 'primevue/config';
-import 'primeicons/primeicons.css';  // Add this line if it's not present
+import 'primeicons/primeicons.css';  // PrimeIcons
 
-// PrimeVue component registration (optional if registering locally)
+// Tailwind import (make sure it's loaded after PrimeVue)
+import './assets/main.css';  // Your Tailwind file
 
 const app = createApp(App);
 
