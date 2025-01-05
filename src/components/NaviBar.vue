@@ -1,8 +1,9 @@
 <template>
   <div class="card">
-    <Toolbar class="">
+    <Toolbar class="flex items-center justify-between">
+      <!-- Logo on the left -->
       <template #start>
-        <div>
+        <div class="flex items-center">
           <img
             alt="Vue logo"
             class="block lg:mr-4"
@@ -12,20 +13,22 @@
           />
         </div>
       </template>
+
+      <!-- Search bar in the center -->
       <template #center>
-        <div class="text-black font-normal border-2 border-gray-400 rounded-lg py-2 px-2">
-          <InputText placeholder="Search store" />
-          <i class="pi pi-search"></i>
+        <div class="flex items-center text-black font-normal border-2 border-gray-400 rounded-lg py-2 px-2 w-full max-w-md mx-auto">
+          <InputText placeholder="Search store" class="flex-grow bg-transparent border-none outline-none" />
+          <i class="pi pi-search text-gray-500 ml-2"></i>
         </div>
       </template>
+
+      <!-- Buttons on the right -->
       <template #end>
-        <div class="flex">
-          <Button :icon="'pi pi-list'" class="text-gray-600 mr-5" />
-          <Button :icon="'pi pi-users'" class="text-gray-600 mr-5" />
-
-          <Button :icon="'pi pi-shopping-cart'" class="text-gray-600 mr-5" />
-
-          <Button :icon="'pi pi-user'" class="text-gray-600 mr-5" @click="visible = true" />
+        <div class="flex items-center gap-5">
+          <Button :icon="'pi pi-list'" class="text-gray-600" />
+          <Button :icon="'pi pi-users'" class="text-gray-600" />
+          <Button :icon="'pi pi-shopping-cart'" class="text-gray-600" />
+          <Button :icon="'pi pi-user'" class="text-gray-600" @click="visible = true" />
           <Drawer v-model:visible="visible" position="right" class="!bg-[#2F2D2E]">
             <template #header>
               <div class="flex items-center gap-2">
@@ -56,6 +59,7 @@
     </Toolbar>
   </div>
 </template>
+
 
 <script setup lang="ts">
 import Toolbar from 'primevue/toolbar'
