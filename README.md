@@ -1,45 +1,83 @@
 # epicgamesredesign
 
-This template should help get you started developing with Vue 3 in Vite.
+Welcome to the EGS launcher redesign! This project is a redesign of the Epic Games launcher which includes multiple pages such as a home page, a page to view game listings along with the users cart. 
 
-## Recommended IDE Setup
+## Table of Contents
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
-## Type Support for `.vue` Imports in TS
+## Features
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+- DIsplays list of downloaded, recommended and free games on the home page.
+- Has a search bar allowing for games to be searched.
+- has a cart, friends and profile section to be accessed from the navigation bar
+- Responsive design for optimal viewing on various devices.
 
-## Customize configuration
+## Demo
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+Will add in link when available
 
-## Project Setup
+## Installation
 
-```sh
-npm install
-```
+1. **Clone the repository:**
 
-### Compile and Hot-Reload for Development
+    ```bash
+    git clone https://github.com/your-username/epicgamesredesign.git
+    cd/epicgamesredesign
+    ```
 
-```sh
-npm run dev
-```
+2. **Install dependencies:**
 
-### Type-Check, Compile and Minify for Production
+    ```bash
+    npm install
+    ```
 
-```sh
-npm run build
-```
+3. **Start the development server:**
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+    ```bash
+    npm run dev
+    ```
 
-```sh
-npm run test:unit
-```
+4. **Start the express server:**
 
-### Lint with [ESLint](https://eslint.org/)
+    ```bash
+    node server.js
+    ```
 
-```sh
-npm run lint
-```
+    The application will be available at `http://localhost:3000`.
+
+## Usage
+
+1. Open your browser and navigate to `http://localhost:3000`.
+2. View the home page of the redesigned epic games launcher
+3. Feel free to navigate and look around, this project is more of a cosmetic project, aimed at practising CSS and tailwind stylings. 
+
+## Technologies Used
+
+- **Vue**: JavaScript library for building user interfaces.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **Axios**: Promise-based HTTP client for making API requests.
+- - **Node**: A runtime environment for executing JavaScript code outside the browser, enabling the creation of server-side applications.
+- **Express**: A minimal and flexible Node.js web application framework that simplifies building APIs and handling HTTP requests and responses.
+
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature`).
+3. Make your changes and commit them (`git commit -m 'Add your feature'`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Create a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
